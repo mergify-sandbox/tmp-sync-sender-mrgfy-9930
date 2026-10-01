@@ -1,0 +1,16 @@
+merge_queue:
+  max_parallel_checks: 1
+queue_rules:
+  - name: qmerge
+    update_method: merge
+    merge_method: merge
+    batch_size: 1
+  - name: qrebase
+    update_method: rebase
+    merge_method: merge
+    batch_size: 1
+  - name: qrebasebot
+    update_method: rebase
+    update_bot_account: AlexandreGaubert
+    merge_method: merge
+    batch_size: 1
